@@ -202,9 +202,7 @@ class PlayList {
         for (int i = 0 ; i < this.size-1 ; i++)
         {
             minInd = minIndex(i);
-            tempTrack.setTitle(this.tracks[minInd].getTitle());
-            tempTrack.setArtist(this.tracks[minInd].getArtist());
-            tempTrack.setDuration(this.tracks[minInd].getDuration());
+            tempTrack=this.tracks[minInd];
             this.tracks[minInd] = this.tracks[i];
             this.tracks[i] = tempTrack;
         }
