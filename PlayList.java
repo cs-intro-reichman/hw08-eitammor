@@ -43,8 +43,8 @@ class PlayList {
         }
         else
         {
-            this.size++;
             this.tracks[size] = track;
+            this.size++;
             return true;
         }
         
@@ -76,6 +76,7 @@ class PlayList {
         int sum = 0;
         for (int i = 0; i < size ; i++)
         {
+            System.out.println(this.tracks[i]);
             sum = sum + tracks[i].getDuration();
         }
         return sum;
