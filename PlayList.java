@@ -171,6 +171,7 @@ class PlayList {
      */
     private int minIndex(int start) {
         int minDur = this.tracks[start].getDuration();
+        int minInd = start;
         if (start < 0 || start > size -1)
         {
             return -1;
@@ -182,9 +183,10 @@ class PlayList {
                 if (this.tracks[i].getDuration()<minDur)
                 {
                     minDur = this.tracks[i].getDuration();
+                    minInd = i;
                 }
             }
-            return minDur;
+            return minInd;
         }
     }
 
