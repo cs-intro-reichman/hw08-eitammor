@@ -134,6 +134,7 @@ class PlayList {
             {
                 this.tracks[j] = this.tracks[j-1];
             }
+            this.size--;
         }
     }
 
